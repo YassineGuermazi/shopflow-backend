@@ -31,6 +31,7 @@ public class Product {
     private User seller;
 
     @ElementCollection
+    @Column(columnDefinition = "LONGTEXT")
     private List<String> images;
 
     @ManyToMany
